@@ -1,0 +1,231 @@
+2023-07-09 19:48:42,082 list of IPs: ['192.168.122.201', '192.168.122.202', '192.168.122.203']
+2023-07-09 19:48:42,082 starting configrution
+2023-07-09 19:48:42,106 starting thread (client mode): 0x7dfb1820
+2023-07-09 19:48:42,106 Local version/idstring: SSH-2.0-paramiko_2.7.2
+2023-07-09 19:48:42,163 Remote version/idstring: SSH-1.99-Cisco-1.25
+2023-07-09 19:48:42,163 Connected (version 1.99, client Cisco-1.25)
+2023-07-09 19:48:42,183 kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96'] server mac:['hmac-sha1', 'hmac-sha1-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2023-07-09 19:48:42,183 Kex agreed: diffie-hellman-group-exchange-sha1
+2023-07-09 19:48:42,184 HostKey agreed: ssh-rsa
+2023-07-09 19:48:42,184 Cipher agreed: aes128-ctr
+2023-07-09 19:48:42,184 MAC agreed: hmac-sha1
+2023-07-09 19:48:42,184 Compression agreed: none
+2023-07-09 19:48:42,199 Got server p (2048 bits)
+2023-07-09 19:48:42,427 kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2023-07-09 19:48:42,460 Switch to new keys ...
+2023-07-09 19:48:42,461 Adding ssh-rsa host key for 192.168.122.201: b'a577a30a05936fb2958de24d7237ee71'
+2023-07-09 19:48:42,697 userauth is OK
+2023-07-09 19:48:42,713 Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+2023-07-09 19:48:42,738 Authentication (password) successful!
+2023-07-09 19:48:42,738 [chan 0] Max packet in: 32768 bytes
+2023-07-09 19:48:42,755 [chan 0] Max packet out: 4096 bytes
+2023-07-09 19:48:42,755 Secsh channel 0 opened.
+2023-07-09 19:48:42,769 [chan 0] Sesch channel 0 request ok
+2023-07-09 19:48:42,777 [chan 0] Sesch channel 0 request ok
+2023-07-09 19:48:42,777 write_channel: b'terminal width 511\n'
+2023-07-09 19:48:42,777 Pattern is: terminal width 511
+2023-07-09 19:48:42,789 _read_channel_expect read_data: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch#
+2023-07-09 19:48:42,848 _read_channel_expect read_data: t
+2023-07-09 19:48:42,858 _read_channel_expect read_data: e
+2023-07-09 19:48:42,869 _read_channel_expect read_data: r
+2023-07-09 19:48:42,879 _read_channel_expect read_data: m
+2023-07-09 19:48:42,889 _read_channel_expect read_data: i
+2023-07-09 19:48:42,900 _read_channel_expect read_data: n
+2023-07-09 19:48:42,910 _read_channel_expect read_data: al
+2023-07-09 19:48:42,924 _read_channel_expect read_data:  
+2023-07-09 19:48:42,935 _read_channel_expect read_data: w
+2023-07-09 19:48:42,945 _read_channel_expect read_data: i
+2023-07-09 19:48:42,956 _read_channel_expect read_data: d
+2023-07-09 19:48:42,966 _read_channel_expect read_data: t
+2023-07-09 19:48:42,976 _read_channel_expect read_data: h
+2023-07-09 19:48:42,987 _read_channel_expect read_data:  
+2023-07-09 19:48:42,998 _read_channel_expect read_data: 5
+2023-07-09 19:48:43,008 _read_channel_expect read_data: 1
+2023-07-09 19:48:43,019 _read_channel_expect read_data: 1
+2023-07-09 19:48:43,019 Pattern found: terminal width 511 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch#terminal width 511
+2023-07-09 19:48:43,019 In disable_paging
+2023-07-09 19:48:43,019 Command: terminal length 0
+
+2023-07-09 19:48:43,019 write_channel: b'terminal length 0\n'
+2023-07-09 19:48:43,019 Pattern is: terminal\ length\ 0
+2023-07-09 19:48:43,031 _read_channel_expect read_data: 
+
+2023-07-09 19:48:43,045 _read_channel_expect read_data: Switch#
+2023-07-09 19:48:43,058 _read_channel_expect read_data: t
+2023-07-09 19:48:43,068 _read_channel_expect read_data: e
+2023-07-09 19:48:43,079 _read_channel_expect read_data: r
+2023-07-09 19:48:43,089 _read_channel_expect read_data: m
+2023-07-09 19:48:43,099 _read_channel_expect read_data: i
+2023-07-09 19:48:43,109 _read_channel_expect read_data: na
+2023-07-09 19:48:43,120 _read_channel_expect read_data: l
+2023-07-09 19:48:43,130 _read_channel_expect read_data:  
+2023-07-09 19:48:43,141 _read_channel_expect read_data: l
+2023-07-09 19:48:43,151 _read_channel_expect read_data: en
+2023-07-09 19:48:43,161 _read_channel_expect read_data: g
+2023-07-09 19:48:43,172 _read_channel_expect read_data: t
+2023-07-09 19:48:43,182 _read_channel_expect read_data: h
+2023-07-09 19:48:43,192 _read_channel_expect read_data:  
+2023-07-09 19:48:43,203 _read_channel_expect read_data: 0
+2023-07-09 19:48:43,203 Pattern found: terminal\ length\ 0 
+Switch#terminal length 0
+2023-07-09 19:48:43,203 
+Switch#terminal length 0
+2023-07-09 19:48:43,203 Exiting disable_paging
+2023-07-09 19:48:43,213 read_channel: 
+
+2023-07-09 19:48:43,213 Clear buffer detects data in the channel
+2023-07-09 19:48:43,233 read_channel: Switch#
+2023-07-09 19:48:43,234 Clear buffer detects data in the channel
+2023-07-09 19:48:43,274 read_channel: 
+2023-07-09 19:48:43,275 write_channel: b'\n'
+2023-07-09 19:48:43,285 read_channel: 
+2023-07-09 19:48:43,285 read_channel: 
+2023-07-09 19:48:43,285 write_channel: b'\n'
+2023-07-09 19:48:43,295 read_channel: 
+
+2023-07-09 19:48:43,296 write_channel: b'\n'
+2023-07-09 19:48:43,316 read_channel: Switch#
+
+2023-07-09 19:48:43,337 read_channel: Switch#
+Switch#
+2023-07-09 19:48:43,337 Clear buffer detects data in the channel
+2023-07-09 19:48:43,357 read_channel: 
+2023-07-09 19:48:43,358 [find_prompt()]: prompt is Switch#
+2023-07-09 19:48:43,358 object has been created
+2023-07-09 19:48:43,358 write_channel: b'\n'
+2023-07-09 19:48:43,358 Pattern is: #
+2023-07-09 19:48:43,379 _read_channel_expect read_data: 
+
+2023-07-09 19:48:43,389 _read_channel_expect read_data: Switch#
+2023-07-09 19:48:43,390 Pattern found: # 
+Switch#
+2023-07-09 19:48:43,390 write_channel: b'configure terminal\n'
+2023-07-09 19:48:43,390 Pattern is: configure\ terminal
+2023-07-09 19:48:43,400 _read_channel_expect read_data: c
+2023-07-09 19:48:43,416 _read_channel_expect read_data: o
+2023-07-09 19:48:43,432 _read_channel_expect read_data: n
+2023-07-09 19:48:43,443 _read_channel_expect read_data: f
+2023-07-09 19:48:43,462 _read_channel_expect read_data: i
+2023-07-09 19:48:43,480 _read_channel_expect read_data: g
+2023-07-09 19:48:43,494 _read_channel_expect read_data: u
+2023-07-09 19:48:43,505 _read_channel_expect read_data: r
+2023-07-09 19:48:43,522 _read_channel_expect read_data: e
+2023-07-09 19:48:43,537 _read_channel_expect read_data:  
+2023-07-09 19:48:43,558 _read_channel_expect read_data: t
+2023-07-09 19:48:43,568 _read_channel_expect read_data: e
+2023-07-09 19:48:43,584 _read_channel_expect read_data: r
+2023-07-09 19:48:43,598 _read_channel_expect read_data: m
+2023-07-09 19:48:43,611 _read_channel_expect read_data: i
+2023-07-09 19:48:43,623 _read_channel_expect read_data: n
+2023-07-09 19:48:43,635 _read_channel_expect read_data: a
+2023-07-09 19:48:43,646 _read_channel_expect read_data: l
+2023-07-09 19:48:43,646 Pattern found: configure\ terminal configure terminal
+2023-07-09 19:48:43,646 Pattern is: Switch
+2023-07-09 19:48:43,655 _read_channel_expect read_data: 
+
+2023-07-09 19:48:43,676 _read_channel_expect read_data: Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+2023-07-09 19:48:43,676 Pattern found: Switch 
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+2023-07-09 19:48:43,677 write_channel: b'\n'
+2023-07-09 19:48:43,677 Pattern is: #
+2023-07-09 19:48:43,701 _read_channel_expect read_data: 
+
+2023-07-09 19:48:43,714 _read_channel_expect read_data: Switch(config)#
+2023-07-09 19:48:43,714 Pattern found: # 
+Switch(config)#
+2023-07-09 19:48:43,714 write_channel: b'vlan 2\n'
+2023-07-09 19:48:43,714 Pattern is: vlan\ 2
+2023-07-09 19:48:43,732 _read_channel_expect read_data: v
+2023-07-09 19:48:43,746 _read_channel_expect read_data: l
+2023-07-09 19:48:43,768 _read_channel_expect read_data: a
+2023-07-09 19:48:44,511 _read_channel_expect read_data: n
+2023-07-09 19:48:44,524 _read_channel_expect read_data:  
+2023-07-09 19:48:44,534 _read_channel_expect read_data: 2
+2023-07-09 19:48:44,534 Pattern found: vlan\ 2 vlan 2
+2023-07-09 19:48:44,535 Pattern is: (?:Switch|#)
+2023-07-09 19:48:44,540 _read_channel_expect read_data: 
+
+2023-07-09 19:48:44,577 _read_channel_expect read_data: Switch(config-vlan)#
+2023-07-09 19:48:44,577 Pattern found: (?:Switch|#) 
+Switch(config-vlan)#
+2023-07-09 19:48:44,578 write_channel: b'name Python_Vlan_2\n'
+2023-07-09 19:48:44,578 Pattern is: name\ Python_Vlan_2
+2023-07-09 19:48:44,591 _read_channel_expect read_data: n
+2023-07-09 19:48:44,612 _read_channel_expect read_data: a
+2023-07-09 19:48:44,633 _read_channel_expect read_data: m
+2023-07-09 19:48:44,644 _read_channel_expect read_data: e
+2023-07-09 19:48:44,654 _read_channel_expect read_data:  
+2023-07-09 19:48:44,664 _read_channel_expect read_data: P
+2023-07-09 19:48:44,675 _read_channel_expect read_data: y
+2023-07-09 19:48:44,685 _read_channel_expect read_data: t
+2023-07-09 19:48:44,695 _read_channel_expect read_data: h
+2023-07-09 19:48:44,706 _read_channel_expect read_data: o
+2023-07-09 19:48:44,741 _read_channel_expect read_data: n
+2023-07-09 19:48:44,752 _read_channel_expect read_data: _
+2023-07-09 19:48:44,762 _read_channel_expect read_data: V
+2023-07-09 19:48:44,773 _read_channel_expect read_data: l
+2023-07-09 19:48:44,783 _read_channel_expect read_data: a
+2023-07-09 19:48:44,793 _read_channel_expect read_data: n_
+2023-07-09 19:48:44,804 _read_channel_expect read_data: 2
+2023-07-09 19:48:44,804 Pattern found: name\ Python_Vlan_2 name Python_Vlan_2
+2023-07-09 19:48:44,804 Pattern is: (?:Switch|#)
+2023-07-09 19:48:44,811 _read_channel_expect read_data: 
+
+2023-07-09 19:48:44,827 _read_channel_expect read_data: Switch(config-vlan)#
+2023-07-09 19:48:44,827 Pattern found: (?:Switch|#) 
+Switch(config-vlan)#
+2023-07-09 19:48:44,827 write_channel: b'\n'
+2023-07-09 19:48:44,827 Pattern is: #
+2023-07-09 19:48:44,843 _read_channel_expect read_data: 
+
+2023-07-09 19:48:44,853 _read_channel_expect read_data: Switch(config-vlan)#
+2023-07-09 19:48:44,853 Pattern found: # 
+Switch(config-vlan)#
+2023-07-09 19:48:44,853 write_channel: b'end\n'
+2023-07-09 19:48:44,854 Pattern is: end
+2023-07-09 19:48:44,865 _read_channel_expect read_data: e
+2023-07-09 19:48:44,875 _read_channel_expect read_data: n
+2023-07-09 19:48:44,886 _read_channel_expect read_data: d
+2023-07-09 19:48:44,886 Pattern found: end end
+2023-07-09 19:48:44,886 Pattern is: #
+2023-07-09 19:48:44,890 _read_channel_expect read_data: 
+
+2023-07-09 19:48:45,300 _read_channel_expect read_data: Switch#
+2023-07-09 19:48:45,301 Pattern found: # 
+Switch#
+2023-07-09 19:48:45,301 write_channel: b'\n'
+2023-07-09 19:48:45,301 Pattern is: #
+2023-07-09 19:48:45,318 _read_channel_expect read_data: 
+
+2023-07-09 19:48:45,329 _read_channel_expect read_data: Switch#
+2023-07-09 19:48:45,329 Pattern found: # 
+Switch#
+2023-07-09 19:48:45,329 exit_config_mode: end
+Switch#
+2023-07-09 19:48:45,329 configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 2
+Switch(config-vlan)#name Python_Vlan_2
+Switch(config-vlan)#end
+Switch#
+2023-07-09 19:48:45,329 commands execution starts
