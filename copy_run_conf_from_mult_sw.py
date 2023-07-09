@@ -19,7 +19,7 @@ except:
    logger.error("data loading failed")
 
 logger.info("going into configrution")
-qtry:
+try:
    for ind in df.index:
        HOST=df.serverip[ind]
        user=df.username[ind]
@@ -32,14 +32,12 @@ qtry:
           tn.read_until(b"Password: ")
           tn.write(password.encode('ascii') +b"\n")
 
-       tn.write(b"enable\n")
+       #tn.write(b"enable\n")
        #tn.write(b"tarkesh\n")
-       tn.write(b"conf t\n")
-       for i in range(1,4):
-           tn.write(b'vlan ' + str(i).encode() + b'\n')
-           #tn.write(b'vlan '+str(i).encode()+'\n')
-           tn.write(b'name Python_VLAN_'+str(i).encode()+ b'\n')
-       tn.write(b"end\n")
+       #tn.write(b"conf t\n")
+       tn.write(b"terminal length 0\n")
+       tn.write(b'show run\n')
+       logger.info(f'getting running conf')
        tn.write(b"exit\n")
 
        logger.info(tn.read_all().decode('ascii'))
